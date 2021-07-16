@@ -18,9 +18,9 @@ module.exports = {
                 return reject(new TypeError("User property name must be a string"));
             }
 
-            if (typeof value !== "string") {
-                return reject(new TypeError("User property value must be a string"));
-            }
+            //if (typeof value !== "string") {
+            //    return reject(new TypeError("User property value must be a string"));
+            //}
 
             exec(resolve, reject, PLUGIN_NAME, "setUserProperty", [name, value]);
         });
