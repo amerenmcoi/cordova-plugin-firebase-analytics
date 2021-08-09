@@ -38,10 +38,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             https://developer.apple.com/documentation/foundation/nsstring/1409420-boolvalue?preferredLanguage=occ
         -->
         <config-file target="*-Info.plist" parent="FIREBASE_ANALYTICS_COLLECTION_ENABLED">
-            <boolean>$ANALYTICS_COLLECTION_ENABLED</boolean>
+            <string>$ANALYTICS_COLLECTION_ENABLED</string>
         </config-file>
         <config-file target="*-Info.plist" parent="FirebaseAutomaticScreenReportingEnabled">
-            <boolean>$AUTOMATIC_SCREEN_REPORTING_ENABLED</boolean>
+            <string>$AUTOMATIC_SCREEN_REPORTING_ENABLED</string>
         </config-file>
 
         <header-file src="src/ios/FirebaseAnalyticsPlugin.h" />
